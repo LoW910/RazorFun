@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor Fun</title>
+</head>
+<body>
+    @{
+        string[] words = new string[]{
+            "Apple Pie",
+            "Burritos",
+            "Clams",
+            "Donuts",
+            "Tofu",
+            "Candy"
+
+        };
+            foreach (var word in words)
+            {
+                if(word[0].ToString().ToLower() == "c"){
+                    <p style="color: red">@word this is food that starts with C</p>
+                }else {
+                    <p>@word this is food that starts with @word[0].ToString().ToUpper()</p>
+                }
+            }
+    }
+</body>
+</html>
