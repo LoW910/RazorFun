@@ -27,6 +27,7 @@ namespace RazorFun
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
             app.UseMvc();
 
             // app.UseRouting();
